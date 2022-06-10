@@ -25,8 +25,7 @@ If you installed the JDK correctly, then the program will begin running.
 
 ## How to Use
 
-Once you run the file FractionCalculator.jar you should be greeted by the
-following message:
+When the program starts, it outputs the text below:
 
 ```
 Fraction Calculator by Colin Fiedorowicz
