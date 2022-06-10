@@ -32,7 +32,11 @@ When the program starts, it outputs the text below:
     >
 
 The closing angle bracket designates the start of each expression—similar to how
-each line in Bash begins with a dollar sign.
+each line in Bash begins with a dollar sign. Unlike other calculators, which
+take expressions in infix form, this calculator takes them in prefix form.
+Expressions in prefix form place the operators _before_, not between, the
+operands. For example, the equation "a + b" is represented as "+ a b" in prefix
+form.
 
 The syntax of the calculator commands is:
 
