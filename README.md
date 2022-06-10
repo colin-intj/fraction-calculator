@@ -43,7 +43,7 @@ Expressions for this calculator have the following syntax:
     [add|subtract|multiply|divide] <First Operand> & <Second Operand>
 
 You can enter the operands as either an integer, decimal, or fraction in the
-form: "_numerator_ / _denominator_."
+form: <code><i>numerator</i>/<i>denominator</i></code>
 
 Here are some examples of valid expressions:
 
