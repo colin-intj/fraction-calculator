@@ -9,6 +9,20 @@ simple fraction calculator. The calculator can add, subtract, multiply, and
 divide expressions containing two operands; the best part is that it also
 simplifies the solutions!
 
+## How to Install
+
+This program requires the Java JDK to run, which you can
+[download from Oracle's website](https://www.oracle.com/java/technologies/downloads/).
+Once you've installed the JDK, download and extract this repository, then
+navigate to it from your computer's terminal emulator. Finally, to run the
+program, enter the following command:
+
+```
+java -jar fraction-calculator.jar
+```
+
+If you installed the JDK correctly, then the program will begin running.
+
 ## How to Use
 
 Once you run the file FractionCalculator.jar you should be greeted by the
