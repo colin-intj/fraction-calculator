@@ -1,10 +1,11 @@
 # Fraction Calculator
 
-My favorite part of the Python programming language is the fractions module.
-This module enables programmers to represent irrational numbers as fractions,
-thus, increasing accuracy. Since Java doesn't have an equivalent library, I
-wrote a Java class that performs a similar function; to demonstrate it, I made
-this simple fraction calculator. The calculator can add, subtract, multiply, and
+My favorite part of the Python programming language is
+[the fractions module](https://docs.python.org/3/library/fractions.html). This
+module enables programmers to represent irrational numbers as fractions, thus,
+increasing accuracy. Since Java doesn't have an equivalent library, I wrote a
+Java class that performs a similar function; to demonstrate it, I made this
+simple fraction calculator. The calculator can add, subtract, multiply, and
 divide expressions containing two operands; the best part is that it also
 simplifies the solutions!
 
