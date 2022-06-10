@@ -27,15 +27,13 @@ If you installed the JDK correctly, then the program will begin running.
 
 When the program starts, it outputs the text below:
 
-```
-Fraction Calculator by Colin Fiedorowicz
+    Fraction Calculator by Colin Fiedorowicz
 
->
-```
+    >
 
 The syntax of the calculator commands is:
 
-`[operation] [fraction] & [fraction]`
+    [operation] [fraction] & [fraction]
 
 The list of appropiate operations are:
 
@@ -51,12 +49,10 @@ To exit the program, type "exit".
 
 ## Sample Run
 
-```
-Fraction Calculator by Colin Fiedorowicz
+    Fraction Calculator by Colin Fiedorowicz
 
-> add 1/2 & 1/2
-1/1
-> exit
+    > add 1/2 & 1/2
+    1/1
+    > exit
 
-PROGRAM TERMINATED
-```
+    PROGRAM TERMINATED
