@@ -53,13 +53,3 @@ Here are some examples of valid expressions:
     > divide 1 & 1/4
 
 To exit the program, type "exit".
-
-## Sample Run
-
-    Fraction Calculator by Colin Fiedorowicz
-
-    > add 1/2 & 1/2
-    1/1
-    > exit
-
-    PROGRAM TERMINATED
