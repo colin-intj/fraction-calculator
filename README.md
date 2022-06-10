@@ -52,4 +52,4 @@ Here are some examples of valid expressions:
     > multiply 4 & 0.25
     > divide 1 & 1/4
 
-To exit the program, type "exit".
+To exit the program, enter `exit` instead of an expression.
