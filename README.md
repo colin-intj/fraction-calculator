@@ -45,6 +45,13 @@ Expressions for this calculator have the following syntax:
 You can enter the operands as either an integer, decimal, or fraction in the
 form: "_numerator_ / _denominator_."
 
+Here are some examples of valid expressions:
+
+    > add 1/2 & 1/2
+    > subtract 2/3 & 5/12
+    > multiply 4 & 0.25
+    > divide 1 & 1/4
+
 To exit the program, type "exit".
 
 ## Sample Run
