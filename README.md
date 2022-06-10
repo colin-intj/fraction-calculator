@@ -17,8 +17,8 @@ Once you've installed the JDK, download and extract this repository, then
 navigate to it from your computer's terminal emulator. Finally, to run the
 program, enter the following command:
 
-```
-java -jar fraction-calculator.jar
+```console
+$ java -jar fraction-calculator.jar
 ```
 
 If you installed the JDK correctly, then the program will begin running.
