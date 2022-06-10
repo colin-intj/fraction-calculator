@@ -1,3 +1,6 @@
+// Development Began: November 05, 2021
+// First Version Completed: 8:25PM CDT November 17, 2021
+
 package fractioncalculator;
 
 import java.util.Scanner;
@@ -12,10 +15,6 @@ public class FractionCalculator {
       int argumentStart;
       if (input.equals("exit")) {
         break;
-      } else if (input.equals("release")) {
-        System.out.println("Development Began: November 05, 2021");
-        System.out.println("Version 1 Finished: 8:25PM CDT November 17, 2021");
-        continue;
       } else if (input.startsWith("add ")) {
         argumentStart = 4;
       } else if (input.startsWith("subtract ") || input.startsWith("multiply ")) {
