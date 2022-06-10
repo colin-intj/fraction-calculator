@@ -31,6 +31,9 @@ When the program starts, it outputs the text below:
 
     >
 
+The closing angle bracket designates the start of each expression—similar to how
+each line in Bash begins with a dollar sign.
+
 The syntax of the calculator commands is:
 
     [operation] [fraction] & [fraction]
