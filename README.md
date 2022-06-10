@@ -38,19 +38,12 @@ Expressions in prefix form place the operators _before_, not between, the
 operands. For example, the equation "a + b" is represented as "+ a b" in prefix
 form.
 
-The syntax of the calculator commands is:
+Expressions for this calculator have the following syntax:
 
-    [operation] [fraction] & [fraction]
+    [add|subtract|multiply|divide] <First Operand> & <Second Operand>
 
-The list of appropiate operations are:
-
-- add
-- subtract
-- multiply
-- divide
-
-Fractions can be entered as either a decimal, whole number, or fraction in the
-form: "[numerator] / [denominator]"
+You can enter the operands as either an integer, decimal, or fraction in the
+form: "_numerator_ / _denominator_."
 
 To exit the program, type "exit".
 
