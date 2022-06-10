@@ -32,8 +32,8 @@ public class FractionCalculator {
         System.out.println("ERROR: Missing \" & \" between arguments");
         continue;
       }
-      String[] arguments = { rawArgument.substring(0, joinerIndex),
-          rawArgument.substring(joinerIndex + 3, rawArgument.length()) };
+      String[] arguments = {rawArgument.substring(0, joinerIndex),
+          rawArgument.substring(joinerIndex + 3, rawArgument.length())};
       Fraction[] fractions = new Fraction[2];
       for (int i = 0; i <= 1; i++) {
         try {
