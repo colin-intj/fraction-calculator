@@ -1,5 +1,5 @@
 // Development Began: November 05, 2021
-// First Version Completed: 8:25PM CDT November 17, 2021
+// Originally Completed: 8:25PM CDT November 17, 2021
 
 import java.util.Scanner;
 
