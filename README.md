@@ -13,8 +13,9 @@ simplifies the solutions!
 
 This program requires the Java JDK to run, which you can
 [download from Oracle's website](https://www.oracle.com/java/technologies/downloads/).
-Once you've installed the JDK, download and extract this repository, then
-navigate to it from your computer's terminal emulator. Finally, to run the
+Once you've installed the JDK, download the jar file from
+[the releases page](https://github.com/colin-intj/fraction-calculator/releases/latest),
+then navigate to it from your computer's terminal emulator. Finally, to run the
 program, enter the following command:
 
 ```console
