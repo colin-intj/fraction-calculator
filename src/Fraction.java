@@ -1,5 +1,3 @@
-package fractioncalculator;
-
 public class Fraction {
 
   private double numerator;

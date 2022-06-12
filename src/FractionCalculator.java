@@ -1,8 +1,6 @@
 // Development Began: November 05, 2021
 // First Version Completed: 8:25PM CDT November 17, 2021
 
-package fractioncalculator;
-
 import java.util.Scanner;
 
 public class FractionCalculator {
