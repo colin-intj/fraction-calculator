@@ -6,7 +6,8 @@ import java.util.Scanner;
 public class FractionCalculator {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    System.out.println("Fraction Calculator by Colin Fiedorowicz\n");
+    System.out.println("Fraction Calculator by Colin Fiedorowicz");
+    System.out.println();
     calc: while (true) {
       System.out.print("> ");
       String input = scanner.nextLine().toLowerCase();
@@ -57,7 +58,8 @@ public class FractionCalculator {
       System.out.println(fractions[0]);
     }
     scanner.close();
-    System.out.println("\nPROGRAM TERMINATED");
+    System.out.println();
+    System.out.println("PROGRAM TERMINATED");
   }
 
   private static Fraction inputToFraction(String input) {
