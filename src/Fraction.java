@@ -32,7 +32,7 @@ public class Fraction {
    * @param stringFraction String in form "[numerator]/[denominator]" to convert to fraction
    */
   public Fraction(String stringFraction) {
-    int SLASH_INDEX = stringFraction.indexOf('/');
+    final int SLASH_INDEX = stringFraction.indexOf('/');
     if (SLASH_INDEX == -1) {
       throw new NumberFormatException(
           "Make sure that fraction is in the form: \"[numerator]/[denominator]\"");
