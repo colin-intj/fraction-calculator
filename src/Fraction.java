@@ -150,7 +150,6 @@ public class Fraction {
   /**
    * Returns the fraction as a String in the form: "[numerator] / [denominator]".
    */
-  @Override
   public String toString() {
     return (int) numerator + "/" + (int) denominator;
   }
