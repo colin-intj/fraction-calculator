@@ -58,8 +58,6 @@ public class FractionCalculator {
       System.out.println(fractions[0]);
     }
     scanner.close();
-    System.out.println();
-    System.out.println("PROGRAM TERMINATED");
   }
 
   private static Fraction inputToFraction(String input) {
