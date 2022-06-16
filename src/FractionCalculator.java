@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class FractionCalculator {
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
     System.out.println("Fraction Calculator by Colin Fiedorowicz");
+    Scanner scanner = new Scanner(System.in);
     System.out.println();
     calc: while (true) {
       System.out.print("> ");
