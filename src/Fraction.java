@@ -32,15 +32,20 @@ public class Fraction {
    * @param stringFraction String in form "[numerator]/[denominator]" to convert to fraction
    */
   public Fraction(String stringFraction) {
-    final int SLASH_INDEX = stringFraction.indexOf('/');
-    if (SLASH_INDEX == -1) {
+    /*
+     * Even though the `stringFraction` variable never gets reassigned, its name doesn't use
+     * constant case because its initial value depends on the `indexOf()` method's output. Thus, its
+     * value isn't truly "constant."
+     */
+    final int slashIndex = stringFraction.indexOf('/');
+    if (slashIndex == -1) {
       throw new NumberFormatException(
           "Make sure that fraction is in the form: \"[numerator]/[denominator]\"");
     }
     try {
-      this.numerator = Double.parseDouble(stringFraction.substring(0, SLASH_INDEX));
+      this.numerator = Double.parseDouble(stringFraction.substring(0, slashIndex));
       this.denominator =
-          Double.parseDouble(stringFraction.substring(SLASH_INDEX + 1, stringFraction.length()));
+          Double.parseDouble(stringFraction.substring(slashIndex + 1, stringFraction.length()));
       simplify();
     } catch (NumberFormatException e) {
       throw new NumberFormatException(
@@ -55,9 +60,13 @@ public class Fraction {
       numerator = numFrac[0] * denFrac[1];
       denominator = numFrac[1] * denFrac[0];
     }
-    final double GCD = gcd(numerator, denominator);
-    numerator /= GCD;
-    denominator /= GCD;
+    /*
+     * Like the `slashIndex` variable, the `gcd` variable doesn't use constant case because it's
+     * value depends on a method's output.
+     */
+    final double gcd = gcd(numerator, denominator);
+    numerator /= gcd;
+    denominator /= gcd;
   }
 
   private int[] fracArr(double doubleNum) {
