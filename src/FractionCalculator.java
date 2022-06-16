@@ -10,37 +10,37 @@ public class FractionCalculator {
     calc: while (true) {
       System.out.print("> ");
       String input = scanner.nextLine().toLowerCase();
-      int argumentStart;
+      int operandsIndex;
       if (input.equals("exit")) {
         break;
       } else if (input.startsWith("add ")) {
-        argumentStart = 4;
+        operandsIndex = 4;
       } else if (input.startsWith("subtract ") || input.startsWith("multiply ")) {
-        argumentStart = 9;
+        operandsIndex = 9;
       } else if (input.startsWith("divide ")) {
-        argumentStart = 7;
+        operandsIndex = 7;
       } else {
-        System.out.println("ERROR: Invalid command");
+        System.out.println("ERROR: Invalid expression");
         continue;
       }
-      String rawArgument = input.substring(argumentStart, input.length());
-      int joinerIndex = rawArgument.indexOf(" & ");
+      String operandsString = input.substring(operandsIndex, input.length());
+      int joinerIndex = operandsString.indexOf(" & ");
       if (joinerIndex == -1) {
-        System.out.println("ERROR: Missing \" & \" between arguments");
+        System.out.println("ERROR: Missing \" & \" between operands");
         continue;
       }
-      String[] arguments = {rawArgument.substring(0, joinerIndex),
-          rawArgument.substring(joinerIndex + 3, rawArgument.length())};
+      String[] operandsArray = {operandsString.substring(0, joinerIndex),
+          operandsString.substring(joinerIndex + 3, operandsString.length())};
       Fraction[] fractions = new Fraction[2];
       for (int i = 0; i <= 1; i++) {
         try {
-          fractions[i] = inputToFraction(arguments[i]);
+          fractions[i] = inputToFraction(operandsArray[i]);
         } catch (NumberFormatException e) {
-          System.out.println("ERROR: \"" + arguments[i] + "\" is not a valid fraction");
+          System.out.println("ERROR: \"" + operandsArray[i] + "\" is not a valid fraction");
           continue calc;
         }
       }
-      switch (input.substring(0, argumentStart - 1)) {
+      switch (input.substring(0, operandsIndex - 1)) {
         case "add":
           fractions[0].add(fractions[1]);
           break;
