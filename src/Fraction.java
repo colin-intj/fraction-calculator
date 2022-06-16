@@ -44,8 +44,7 @@ public class Fraction {
     }
     try {
       this.numerator = Double.parseDouble(stringFraction.substring(0, slashIndex));
-      this.denominator =
-          Double.parseDouble(stringFraction.substring(slashIndex + 1, stringFraction.length()));
+      this.denominator = Double.parseDouble(stringFraction.substring(slashIndex + 1));
       simplify();
     } catch (NumberFormatException e) {
       throw new NumberFormatException(
@@ -73,7 +72,7 @@ public class Fraction {
     int[] fracArr = new int[2];
     if (doubleNum != (int) doubleNum) {
       String decStr = String.valueOf(doubleNum - (int) doubleNum);
-      decStr = decStr.substring(2, decStr.length());
+      decStr = decStr.substring(2);
       fracArr[0] = (int) (doubleNum * Math.pow(10, decStr.length()));
       fracArr[1] = (int) Math.pow(10, decStr.length());
     } else {

@@ -28,15 +28,15 @@ public class FractionCalculator {
         System.out.println("ERROR: Invalid expression");
         continue;
       }
-      String operandsString = input.substring(operandsIndex, input.length());
+      String operandsString = input.substring(operandsIndex);
       int joinerIndex = operandsString.indexOf(" & ");
       if (joinerIndex == -1) {
         System.out.println("ERROR: Missing \" & \" between operands");
         continue;
       }
       // Creates new array containing the operands that the user entered
-      String[] operandsArray = {operandsString.substring(0, joinerIndex),
-          operandsString.substring(joinerIndex + 3, operandsString.length())};
+      String[] operandsArray =
+          {operandsString.substring(0, joinerIndex), operandsString.substring(joinerIndex + 3)};
       /*
        * Attempts to convert the operands to fractions and prints an error message if the user
        * entered an invalid fraction.
