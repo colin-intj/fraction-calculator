@@ -11,6 +11,10 @@ public class FractionCalculator {
     calc: while (true) {
       System.out.print("> ");
       String input = scanner.nextLine().toLowerCase();
+      /*
+       * Exits if the user enters "exit," otherwise sets the `operandsIndex` variable to the index
+       * where the operands begin.
+       */
       int operandsIndex;
       if (input.equals("exit")) {
         break;
@@ -30,8 +34,13 @@ public class FractionCalculator {
         System.out.println("ERROR: Missing \" & \" between operands");
         continue;
       }
+      // Creates new array containing the operands that the user entered
       String[] operandsArray = {operandsString.substring(0, joinerIndex),
           operandsString.substring(joinerIndex + 3, operandsString.length())};
+      /*
+       * Attempts to convert the operands to fractions and prints an error message if the user
+       * entered an invalid fraction.
+       */
       Fraction[] fractions = new Fraction[2];
       for (int i = 0; i <= 1; i++) {
         try {
@@ -55,7 +64,7 @@ public class FractionCalculator {
           fractions[0].divide(fractions[1]);
           break;
       }
-      System.out.println(fractions[0]);
+      System.out.println(fractions[0]); // Prints the result of the calculation
     }
     scanner.close();
   }
