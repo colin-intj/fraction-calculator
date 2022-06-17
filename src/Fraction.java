@@ -53,6 +53,10 @@ public class Fraction {
     }
   }
 
+  /**
+   * Simplifies the fraction by dividing the numerator and denominator by it's greatest common
+   * denominator (GCD).
+   */
   private void simplify() {
     if (numerator != (int) numerator || denominator != (int) denominator) {
       int[] numFrac = fracArr(numerator);
@@ -72,6 +76,13 @@ public class Fraction {
     denominator /= gcd;
   }
 
+  /**
+   * Creates an array representation of the fraction where the first item is the numerator, and the
+   * second item is the denominator.
+   * 
+   * @param doubleNum
+   * @return
+   */
   private int[] fracArr(double doubleNum) {
     int[] fracArr = new int[2];
     if (doubleNum != (int) doubleNum) {
@@ -88,6 +99,13 @@ public class Fraction {
     return fracArr;
   }
 
+  /**
+   * Firsts the greatest common denominator (GCD) of two numbers
+   * 
+   * @param num1
+   * @param num2
+   * @return
+   */
   private double gcd(double num1, double num2) {
     return num2 == 0 ? num1 : gcd(num2, num1 % num2);
   }

@@ -78,6 +78,13 @@ public class FractionCalculator {
     scanner.close();
   }
 
+
+  /**
+   * Converts a given string to a fraction object.
+   * 
+   * @param input
+   * @return
+   */
   private static Fraction inputToFraction(String input) {
     Fraction fraction;
     try {
