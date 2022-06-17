@@ -29,7 +29,7 @@ public class Fraction {
   /**
    * Creates a new Fraction object and simplifies it.
    *
-   * @param stringFraction String in form "[numerator]/[denominator]" to convert to fraction
+   * @param stringFraction String in form "<numerator>/<denominator>"
    */
   public Fraction(String stringFraction) {
     /*
@@ -40,7 +40,7 @@ public class Fraction {
     final int slashIndex = stringFraction.indexOf('/');
     if (slashIndex == -1) {
       throw new NumberFormatException(
-          "Make sure that fraction is in the form: \"[numerator]/[denominator]\"");
+          "Make sure that fraction is in the form: \"<numerator>/<denominator>\"");
     }
 
     try {
@@ -49,7 +49,7 @@ public class Fraction {
       simplify();
     } catch (NumberFormatException e) {
       throw new NumberFormatException(
-          "Make sure that fraction is in the form: \"[numerator]/[denominator]\"");
+          "Make sure that fraction is in the form: \"<numerator>/<denominator>\"");
     }
   }
 
@@ -79,7 +79,7 @@ public class Fraction {
   /**
    * Creates an array representation of the fraction where the first item is the numerator, and the
    * second item is the denominator.
-   * 
+   *
    * @param doubleNum
    * @return
    */
@@ -101,7 +101,7 @@ public class Fraction {
 
   /**
    * Firsts the greatest common denominator (GCD) of two numbers
-   * 
+   *
    * @param num1
    * @param num2
    * @return
@@ -180,7 +180,7 @@ public class Fraction {
   }
 
   /**
-   * Returns the fraction as a String in the form: "[numerator] / [denominator]".
+   * Returns the fraction as a String in the form: "<numerator>/<denominator>".
    */
   public String toString() {
     return (int) numerator + "/" + (int) denominator;
