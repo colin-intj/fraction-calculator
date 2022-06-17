@@ -42,6 +42,7 @@ public class Fraction {
       throw new NumberFormatException(
           "Make sure that fraction is in the form: \"[numerator]/[denominator]\"");
     }
+
     try {
       this.numerator = Double.parseDouble(stringFraction.substring(0, slashIndex));
       this.denominator = Double.parseDouble(stringFraction.substring(slashIndex + 1));
@@ -56,14 +57,17 @@ public class Fraction {
     if (numerator != (int) numerator || denominator != (int) denominator) {
       int[] numFrac = fracArr(numerator);
       int[] denFrac = fracArr(denominator);
+
       numerator = numFrac[0] * denFrac[1];
       denominator = numFrac[1] * denFrac[0];
     }
+
     /*
      * Like the `slashIndex` variable, the `gcd` variable doesn't use constant case because it's
      * value depends on a method's output.
      */
     final double gcd = gcd(numerator, denominator);
+
     numerator /= gcd;
     denominator /= gcd;
   }
@@ -73,12 +77,14 @@ public class Fraction {
     if (doubleNum != (int) doubleNum) {
       String decStr = String.valueOf(doubleNum - (int) doubleNum);
       decStr = decStr.substring(2);
+
       fracArr[0] = (int) (doubleNum * Math.pow(10, decStr.length()));
       fracArr[1] = (int) Math.pow(10, decStr.length());
     } else {
       fracArr[0] = (int) doubleNum;
       fracArr[1] = 1;
     }
+
     return fracArr;
   }
 

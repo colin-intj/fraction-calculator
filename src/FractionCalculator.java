@@ -7,10 +7,12 @@ public class FractionCalculator {
   public static void main(String[] args) {
     System.out.println("Fraction Calculator by Colin Fiedorowicz");
     System.out.println();
+
     Scanner scanner = new Scanner(System.in);
     calc: while (true) {
       System.out.print("> ");
       String input = scanner.nextLine().toLowerCase();
+
       /*
        * Exits if the user enters "exit," otherwise sets the `operandsIndex` variable to the index
        * where the operands begin.
@@ -28,15 +30,19 @@ public class FractionCalculator {
         System.out.println("ERROR: Invalid expression");
         continue;
       }
+
       String operandsString = input.substring(operandsIndex);
       int joinerIndex = operandsString.indexOf(" & ");
+
       if (joinerIndex == -1) {
         System.out.println("ERROR: Missing \" & \" between operands");
         continue;
       }
+
       // Creates new array containing the operands that the user entered
       String[] operandsArray =
           {operandsString.substring(0, joinerIndex), operandsString.substring(joinerIndex + 3)};
+
       /*
        * Attempts to convert the operands to fractions and prints an error message if the user
        * entered an invalid fraction.
@@ -50,6 +56,7 @@ public class FractionCalculator {
           continue calc;
         }
       }
+
       switch (input.substring(0, operandsIndex - 1)) {
         case "add":
           fractions[0].add(fractions[1]);
@@ -64,8 +71,10 @@ public class FractionCalculator {
           fractions[0].divide(fractions[1]);
           break;
       }
+
       System.out.println(fractions[0]); // Prints the result of the calculation
     }
+
     scanner.close();
   }
 
@@ -76,6 +85,7 @@ public class FractionCalculator {
     } catch (NumberFormatException e) {
       fraction = new Fraction(Double.parseDouble(input));
     }
+
     return fraction;
   }
 }
